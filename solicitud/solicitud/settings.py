@@ -26,7 +26,7 @@ SECRET_KEY = '5s3xrvrm#c&y6a-y7)fs(b_jr!tt2j$sy85x*1)y(n(^%)td!k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = [' solicitudctpi.herokuapp.com']
 
 
 # Application definition
