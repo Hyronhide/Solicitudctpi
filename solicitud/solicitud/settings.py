@@ -94,21 +94,22 @@ DATABASES = {
         #'HOST': '127.0.0.1',
         #'PORT': '3306',
         #
-        #'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        #'NAME': 'solicitud_db',
-        #'USER': 'django-windows',
-        #'PASSWORD': 'b6032drxw1',
-        #'HOST': 'localhost',
-        #'PORT': '',
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'solicitud_db',
+        'USER': 'django-windows',
+        'PASSWORD': 'b6032drxw1',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
 
-import dj_database_url
+#import dj_database_url
 
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
-db_from_env = dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(db_from_env)
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+#PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+
+#db_from_env = dj_database_url.config(conn_max_age=500)
+#DATABASES['default'].update(db_from_env)
+#SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
 
