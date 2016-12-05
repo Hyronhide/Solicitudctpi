@@ -26,7 +26,7 @@ SECRET_KEY = '5s3xrvrm#c&y6a-y7)fs(b_jr!tt2j$sy85x*1)y(n(^%)td!k'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [' solicitudctpi.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -103,13 +103,14 @@ DATABASES = {
     }
 }
 
-#import dj_database_url
+import dj_database_url
 
 PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 #db_from_env = dj_database_url.config(conn_max_age=500)
 #DATABASES['default'].update(db_from_env)
-#SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+DATABASES['default'] = dj_database_url.config()
+SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Password validation
 # https://docs.djangoproject.com/en/1.9/ref/settings/#auth-password-validators
 
