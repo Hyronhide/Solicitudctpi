@@ -91,7 +91,7 @@ def Solicitud_View (request):
 				servicio_usuario = "Contenidos programaticos: valor $4.100, entregar a Luz Marina Ríos"		 	 
 
 			'''Bloque configuracion de envio por GMAIL'''
-			to_admin = 'lgonzalez21@misena.edu.co'
+			to_admin = 'dbenitez@sena.edu.co'
 			#to_admin = 'drmosquera90@misena.edu.co'
 			to_user = correo
 			html_content_admin = "<p><b>Solicitud de servicio: </b>%s</p> <!--<p><b>Codigo de radicado:</b> %s</p>--> <br> <b>Nombres</b>: %s <br><br> <b>Apellidos</b>: %s  <br><br> <b>Correo:</b> %s  <br><br> <b>Cedula:</b> %s  <br><br> <b>Telefono:</b> %s "%(servicio,codigo_parsear,nombres,apellidos,correo,cedula,telefono)
