@@ -76,22 +76,22 @@ def Solicitud_View (request):
 
 			if tipo_servicio == 'Duplicado_Constancias':
 				servicio = "Duplicado de constancias"
-				servicio_usuario = "Duplicado de constancias: valor $4.100, entregar a Libardo Arias"
+				servicio_usuario = "Duplicado de constancias: valor $4.100, entregar a Cristina Mera"
 
 			if tipo_servicio == 'Duplicado_Actas':
 				servicio = "Duplicado de actas de grado" 
-				servicio_usuario = "Duplicado de actas de grado: valor $4.100, entregar a Libardo Arias"
+				servicio_usuario = "Duplicado de actas de grado: valor $4.100, entregar a Cristina Mera"
 
 			if tipo_servicio == 'Duplicado_Certificados':
 				servicio = "Duplicado de certificados" 
-				servicio_usuario = "Duplicado de certificados: valor $4.100, entregar a Libardo Arias"
+				servicio_usuario = "Duplicado de certificados: valor $4.100, entregar a Cristina Mera"
 
 			if tipo_servicio == 'Contenidos_Programaticos':
 				servicio = "Contenidos programaticos" 	
-				servicio_usuario = "Contenidos programaticos: valor $4.100, entregar a Luz Marina Ríos"		 	 
+				servicio_usuario = "Contenidos programaticos: valor $4.100, entregar a Lina Villamil"		 	 
 
 			'''Bloque configuracion de envio por GMAIL'''
-			to_admin = 'dbenitez@sena.edu.co'
+			to_admin = 'dianabenitez@misena.edu.co'
 			#to_admin = 'drmosquera90@misena.edu.co'
 			to_user = correo
 			html_content_admin = "<p><b>Solicitud de servicio: </b>%s</p> <!--<p><b>Codigo de radicado:</b> %s</p>--> <br> <b>Nombres</b>: %s <br><br> <b>Apellidos</b>: %s  <br><br> <b>Correo:</b> %s  <br><br> <b>Cedula:</b> %s  <br><br> <b>Telefono:</b> %s "%(servicio,codigo_parsear,nombres,apellidos,correo,cedula,telefono)
