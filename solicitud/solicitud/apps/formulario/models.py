@@ -5,10 +5,10 @@ from django.db import models
 
 TIPO_SERVICIO=(
 		('Duplicado_Carnet','Duplicado de carnet: valor $5.000'),
-		('Duplicado_Constancias','Duplicado de constancias: valor $4.100'),
-		('Duplicado_Actas','Duplicado de actas de grado: valor $4.100'),
-		('Duplicado_Certificados','Duplicado de certificados: valor $4.100'),
-		('Contenidos_Programaticos','Contenidos programáticos: valor $4.100'),
+		('Duplicado_Constancias','Duplicado de constancias: valor $4.500'),
+		('Duplicado_Actas','Duplicado de actas de grado: valor $4.500'),
+		('Duplicado_Certificados','Duplicado de certificados: valor $4.500'),
+		('Contenidos_Programaticos','Contenidos programáticos: valor $4.500'),
 	)
 # Create your models here.
 class Solicitud (models.Model):	
