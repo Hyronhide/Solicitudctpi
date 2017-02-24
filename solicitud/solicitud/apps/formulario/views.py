@@ -76,19 +76,19 @@ def Solicitud_View (request):
 
 			if tipo_servicio == 'Duplicado_Constancias':
 				servicio = "Duplicado de constancias"
-				servicio_usuario = "Duplicado de constancias: valor $4.100, entregar a Cristina Mera"
+				servicio_usuario = "Duplicado de constancias: valor $4.500, entregar a Cristina Mera"
 
 			if tipo_servicio == 'Duplicado_Actas':
 				servicio = "Duplicado de actas de grado" 
-				servicio_usuario = "Duplicado de actas de grado: valor $4.100, entregar a Cristina Mera"
+				servicio_usuario = "Duplicado de actas de grado: valor $4.500, entregar a Cristina Mera"
 
 			if tipo_servicio == 'Duplicado_Certificados':
 				servicio = "Duplicado de certificados" 
-				servicio_usuario = "Duplicado de certificados: valor $4.100, entregar a Cristina Mera"
+				servicio_usuario = "Duplicado de certificados: valor $4.500, entregar a Cristina Mera"
 
 			if tipo_servicio == 'Contenidos_Programaticos':
 				servicio = "Contenidos programaticos" 	
-				servicio_usuario = "Contenidos programaticos: valor $4.100, entregar a Lina Villamil"		 	 
+				servicio_usuario = "Contenidos programaticos: valor $4.500, entregar a Lina Villamil"		 	 
 
 			'''Bloque configuracion de envio por GMAIL'''
 			to_admin = 'dbenitez@sena.edu.co'
